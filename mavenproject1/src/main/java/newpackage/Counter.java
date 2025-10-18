@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package newpackage;
 
 /**
  *
  * @author salma
  */
-public class C extends B {
-    public void c() {
-        System.out.println("C");
-        
+public class Counter {
+
+    public int addToNumber(int number) {
+        return number + 1;
+    }
+    
+    public int subtractFromNumber(int number) {
+        return number - 1;
     }
 }

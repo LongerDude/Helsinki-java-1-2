@@ -8,5 +8,19 @@ public class AverageOfNumbers {
         Scanner scanner = new Scanner(System.in);
         // Write your program here
 
+        ArrayList<String> list = new ArrayList<>();
+        System.out.println("Input numbers, type \"end\" to stop.");
+        while (true) {
+            String input = scanner.nextLine();
+            if( input.equals("end")){
+                double avg = list.stream().mapToInt(s -> Integer.valueOf(s))
+                        .average().getAsDouble();
+                System.out.println("average of the numbers: " + avg);
+                break;
+            }
+            list.add(input);
+
+        }
+
     }
 }

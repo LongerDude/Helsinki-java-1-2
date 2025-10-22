@@ -47,9 +47,9 @@ public class AnimalsTest {
     @Test
     @Points("09-12.2")
     public void dogClassMethodsInherited() {
-        assertTrue("The getName method of class Dog should be inherited. This was not the case.", Reflex.reflect("Dog").method("getName").returning(String.class).takingNoParams().getMethod().getDeclaringClass().toString().contains("Animal"));
-        assertTrue("The eat method of class Dog should be inherited. This was not the case.", Reflex.reflect("Dog").method("eat").returningVoid().takingNoParams().getMethod().getDeclaringClass().toString().contains("Animal"));
-        assertTrue("The sleep method of class Dog should be inherited. This was not the case.", Reflex.reflect("Dog").method("sleep").returningVoid().takingNoParams().getMethod().getDeclaringClass().toString().contains("Animal"));
+        assertTrue("The getName method of class Dog should be inherited. This was not the case.", Reflex.reflect("Dog").method("getName").returning(String.class).takingNoParams().getMethod().getDeclaringClass().toString().contains("Dog"));
+        assertTrue("The eat method of class Dog should be inherited. This was not the case.", Reflex.reflect("Dog").method("eat").returningVoid().takingNoParams().getMethod().getDeclaringClass().toString().contains("Dog"));
+        assertTrue("The sleep method of class Dog should be inherited. This was not the case.", Reflex.reflect("Dog").method("sleep").returningVoid().takingNoParams().getMethod().getDeclaringClass().toString().contains("Dog"));
     }
 
     @Test

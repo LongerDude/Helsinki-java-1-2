@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+
 
 public class UniqueLastNames {
 
@@ -16,8 +16,11 @@ public class UniqueLastNames {
 
             if (continueQ.equals("quit")) {
                 System.out.println("Unique last names in alphabetical order:");
-                ArrayList<String> lastNames = persons.stream().map(Person::getLastName).collect(Collectors.toCollection(ArrayList::new));
-                lastNames.stream().sorted().distinct().forEach(s -> System.out.println(s));
+              persons.stream()
+                      .map(Person::getLastName)                      
+                      .distinct()
+                      .sorted()
+                      .forEach(s -> System.out.println(s));                
                 break;
             }
 

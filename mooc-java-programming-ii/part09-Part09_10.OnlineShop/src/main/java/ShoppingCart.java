@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,8 +43,8 @@ public class ShoppingCart {
         //return sum;
 
         int total = this.cart.values().stream().mapToInt(Item::price).sum();
-        int total2 = this.cart.values().stream().map(Item::price).reduce(0, Integer::sum);
-        return total2;
+        //int total2 = this.cart.values().stream().map(Item::price).reduce(0, Integer::sum);
+        return total;
         
     }
     

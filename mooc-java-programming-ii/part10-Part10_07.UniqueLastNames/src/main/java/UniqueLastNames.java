@@ -16,7 +16,7 @@ public class UniqueLastNames {
 
             if (continueQ.equals("quit")) {
                 System.out.println("Unique last names in alphabetical order:");
-              persons.stream()
+              persons.stream() // ruuning the person method to get last names, then filtering disctinct one and sorting them, at  last printing them.
                       .map(Person::getLastName)                      
                       .distinct()
                       .sorted()

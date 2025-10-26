@@ -24,7 +24,7 @@ public class CustomTacoBox implements TacoBox {
 
     @Override
     public void eat() {
-        if (this.tacos == 0){
+        if (this.tacos == 0) { //for when the inventory is set to 0
             return;
         }
         this.tacos--;

@@ -12,8 +12,12 @@ public class Person implements Saveable {
     private String name;
     private String address;
 
+    public void test(){
+        
+    }
     @Override
     public void save() {
+        System.out.println("saves");
 
     }
 

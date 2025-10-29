@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class MainProgram {
-
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Book> books = new ArrayList<>();
@@ -20,7 +20,7 @@ public class MainProgram {
                 for (Book book : books) {
                     System.out.println(book);
                 }
-
+                
                 break;
             } else {
                 System.out.println("Input the age recommendation: ");
@@ -28,9 +28,9 @@ public class MainProgram {
                 Book book = new Book(input, age);
                 books.add(book);
             }
-
+            
         }
-
+        
     }
-
+    
 }

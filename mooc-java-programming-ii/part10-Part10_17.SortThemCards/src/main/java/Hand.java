@@ -39,18 +39,6 @@ public class Hand implements Comparable<Hand> {
 
     public void sortBySuit() {
         Collections.sort(cards, new BySuitInValueOrder());
-       
-        
-        
-        
-        Collections.sort(cards, (c1, c2) -> {
-            if (c1.getSuit().ordinal() - c2.getSuit().ordinal() == 0) {
-                return c1.getValue() - c2.getValue();
-            } else {
-                return c1.getSuit().ordinal() - c2.getSuit().ordinal();
-            }
-        });
-
     }
 
     @Override

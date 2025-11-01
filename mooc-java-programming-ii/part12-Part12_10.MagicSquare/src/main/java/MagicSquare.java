@@ -36,9 +36,8 @@ public class MagicSquare {
 
         while (j < this.square.length) {
             int sum = 0;
-            for (int i = 0; i < this.square.length; i++) {
-                sum += square[i][j];
-
+            for (int[] square1 : this.square) {
+                sum += square1[j];
             }
             j++;
             list.add(sum);
@@ -56,12 +55,9 @@ public class MagicSquare {
         sum = 0;
         int j = square.length-1;
 
-        for (int i = 0; i < square.length; i++) {
-
-            
-            sum += square[i][j];
+        for (int[] square1 : square) {
+            sum += square1[j];
             j--;
-
         }
 
         list.add(sum);

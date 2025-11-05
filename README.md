@@ -21,7 +21,7 @@ This repository contains my solutions and notes for the University of Helsinki M
 - [x] Completed all exercises in Part 10
 - [x] Completed all exercises in Part 11
 - [x] Completed all exercises in Part 12
-- [ ] Completed all exercises in Part 13
+- [x] Completed all exercises in Part 13
 - [ ] Completed all exercises in Part 14
 
 ---

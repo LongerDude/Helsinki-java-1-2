@@ -1,18 +1,21 @@
 package application;
-	import javafx.application.Application;
-	import javafx.stage.Stage;
-	import javafx.scene.Scene;
-	import javafx.scene.chart.LineChart;
-	import javafx.scene.chart.NumberAxis;
-	import javafx.scene.chart.XYChart;
-public class ShanghaiApplication extends Application{
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
+
+public class ShanghaiApplication extends Application {
+
     @Override
-    public void start(Stage window){
-        NumberAxis xAxis = new NumberAxis(2007,2017,1);
-        NumberAxis yAxis = new NumberAxis(0,100,10);
+    public void start(Stage window) {
+        NumberAxis xAxis = new NumberAxis(2007, 2017, 1);
+        NumberAxis yAxis = new NumberAxis(0, 100, 10);
         yAxis.setLabel("Ranking");
         xAxis.setLabel("Year");
-        LineChart<Number, Number> lineChart = new LineChart<>(xAxis,yAxis);
+        LineChart<Number, Number> lineChart = new LineChart<>(xAxis, yAxis);
         lineChart.setTitle("University of Helsinki, Shanghai ranking");
         XYChart.Series data = new XYChart.Series();
         data.getData().add(new XYChart.Data(2007, 73));
@@ -33,7 +36,6 @@ public class ShanghaiApplication extends Application{
         window.setScene(view);
         window.show();
     }
-
 
     public static void main(String[] args) {
         launch(ShanghaiApplication.class);

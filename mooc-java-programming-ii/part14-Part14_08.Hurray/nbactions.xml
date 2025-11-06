@@ -19,7 +19,11 @@
 
         </goals>
         <properties>
+<<<<<<< HEAD
             <exec.args>-classpath %classpath ${packageClassName}</exec.args>
+=======
+            <exec.args>-classpath %classpath hurraa.HurraaSovellus</exec.args>
+>>>>>>> 1ad2803 (newsetup)
             <exec.executable>java</exec.executable>
         </properties>
     </action>
